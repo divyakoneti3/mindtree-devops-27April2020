@@ -3,13 +3,13 @@
 web1
 
 [web]
-web1
-web2
+10.0.0.4
 
 [db]
-web2
-172.42.42.200
-172.42.42.20[3:9]
+10.0.0.4
+
+[petclinic]
+10.0.0.4
 
 [uat]
 web1
@@ -24,9 +24,10 @@ web1
 
 [dc:children]
 web
+petclinic
 
 
 
 [dc:vars]
-ansible_ssh_user=vagrant
-ansible_ssh_pass=vagrant
+ansible_ssh_user=root 
+ansible_ssh_pass=redhat
