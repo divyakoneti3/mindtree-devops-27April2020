@@ -8,7 +8,7 @@ node {
     git branch: 'production', url: 'https://github.com/divyakoneti3/mindtree-devops-27April2020.git'
   }
 
-  def project_path = "04-Ansible/05-Tomcat"
+  def project_path = "ansible-code/05-Tomcat"
 
   dir(project_path) {
    stage('Build Managment') {
